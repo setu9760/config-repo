@@ -1,0 +1,23 @@
+tracer:
+  property: I AM THE RUNNING IN PROD
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+        
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/eagle_eye_prod
+    username: postgres
+    password: postgres
+    testWhileIdle: true
+    validationQuery: SELECT 1

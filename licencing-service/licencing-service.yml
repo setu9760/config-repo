@@ -1,0 +1,24 @@
+tracer:
+  property: I AM THE RUNNING IN DEFAULT
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+        
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.lob.non_contextual_creation: true
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/eagle_eye_local
+    username: postgres
+    password: postgres
+    testWhileIdle: true
+    validationQuery: SELECT 1

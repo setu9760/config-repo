@@ -1,0 +1,8 @@
+tracer:
+  property: I AM THE RUNNING IN DEV
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
