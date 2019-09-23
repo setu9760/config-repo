@@ -6,3 +6,7 @@ managementi:
     web:
       exposure:
         include: "*"
+
+spring:
+  jpa:
+    show-sql: true
