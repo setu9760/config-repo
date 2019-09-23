@@ -1,7 +1,7 @@
 tracer:
-  property: I AM THE RUNNING IN DEV
+  property: I AM THE RUNNING IN DEV UPDATED
 
-management:
+managementi:
   endpoints:
     web:
       exposure:
